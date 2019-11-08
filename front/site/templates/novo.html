@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+{% block conteudo %}
+
+
+      <form class="navbar-form navbar-left" role="search" action="/criar" method="post">
+          <div class="form-group">
+            <input type="text" class="form-control"  id="busca" name="busca" placeholder="Digite a palavra de busca">
+          </div>
+        <button type="submit" class="btn btn-outline-primary">Busca</button>
+      </form>
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "template.html" %}
+{% block conteudo %}
+    <table class="table table-striped table-responsive table-bordered">
+        <thead>
+            <tr>
+                <th>Busca</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for procura in procuras %}
+                        <tr>
+                            <td>{{ procura.busca }}</td>
+                        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
